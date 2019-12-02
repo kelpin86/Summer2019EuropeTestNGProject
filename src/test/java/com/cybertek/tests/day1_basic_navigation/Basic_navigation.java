@@ -12,6 +12,7 @@ public class Basic_navigation {
         driver.get("https://www.youtube.com");
 
         System.out.println(driver.getTitle());
+        driver.quit();
 
     }
 }

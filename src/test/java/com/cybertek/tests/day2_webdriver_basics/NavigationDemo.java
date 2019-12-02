@@ -4,10 +4,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static java.lang.Thread.sleep;
+
 public class NavigationDemo {
     private static long millis;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         //setting up the browser
         WebDriverManager.chromedriver().setup();
@@ -26,7 +28,7 @@ public class NavigationDemo {
         driver.navigate().back();
 
 
-        //Thread.sleep(millis:3000);
+        Thread.sleep(3000);
         
         //goes forward after goes back
         

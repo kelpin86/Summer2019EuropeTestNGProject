@@ -1,23 +1,23 @@
 package com.cybertek.tests.day3_WebElement_intro;
 
+import com.cybertek.utilities.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class VerifyConfirmationMessage {
+    public class VerifyConfirmationMessage {
     /* open browser
-     ngo to http://practice.cybertekschool.com/forgot_passwordLinks to an external site.
+     go to http://practice.cybertekschool.com/forgot_passwordLinks to an external site.
      enter any email
      verify that email is displayed in the input box
      click on Retrieve password
      verify that confirmation message says ‘Your e-mail’s been sent!’ */
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 
         //open chrome
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+       WebDriver driver = WebDriverFactory.getDriver("chrome");
 
         //navigate to website
         driver.get("http://practice.cybertekschool.com/forgot_password");
@@ -55,7 +55,7 @@ public class VerifyConfirmationMessage {
         }
         //Thread.sleep(3000);
         //close the browser
-        driver.quit();
+       // driver.quit();
     }
 
 

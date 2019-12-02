@@ -1,5 +1,6 @@
 package com.cybertek.tests.day3_WebElement_intro;
 
+import com.cybertek.utilities.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +16,10 @@ public class VerifyURLNotChange {
 
     public static void main(String[] args) {
         //open chrome
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+      //WebDriver driver = WebDriverFactory.getDriver("chrome");
+      WebDriverManager.chromedriver().setup();
+      WebDriver driver = new ChromeDriver();
+
 
 
         //go to http://practice.cybertekschool.com/forgot_password Links to an external site.
