@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-/* public class SelectClassTest {
+public class SelectClassTest {
     @Test
     public void test2() throws InterruptedException {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
@@ -45,4 +45,4 @@ import java.util.List;
     }
     }
 
-}*/
+

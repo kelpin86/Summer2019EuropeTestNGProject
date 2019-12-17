@@ -48,7 +48,7 @@ public class ActionsTest {
         actions.pause(1000);
         //we have to provide source and target to this method, it will drag and drop
         //actions.dragAndDrop(source,target).perform();
-        actions.moveToElement(source).clickAndHold().moveToElement(target).release().build().perform();
+        actions.moveToElement(source).clickAndHold().moveToElement(target).release().build().perform()
 
     }
 }
